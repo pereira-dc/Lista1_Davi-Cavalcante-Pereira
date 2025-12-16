@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    double d, tempo;
-
-    scanf("%lf", &d);
-
-    tempo = (d / 150.0) * 60.0;
-
-    printf("%.0lf minutos\n", tempo);
+    int distancia;
+    double tempo_horas, tempo_minutos;
+    
+    printf("Digite a distancia: ");
+    scanf("%d", &distancia);
+    tempo_horas = distancia / 150.0;
+    tempo_minutos = tempo_horas * 60;
+    
+    printf("\n%.0f minutos", tempo_minutos);
     return 0;
 }
